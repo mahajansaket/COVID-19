@@ -21,7 +21,7 @@ function App() {
         },
       };
 
-      const totalCases = await axios(
+      const totalCases = await axios.get(
         "https://api.covid19api.com/summary",
         config
       );
